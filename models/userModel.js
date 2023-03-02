@@ -9,7 +9,10 @@ module.exports = {
     getUser: async function(){
 
         const result = await models.User.findAll({
-            include:models.Roles
+            include:models.Roles,
+            attributes: {
+        exclude: ['password']
+      }
         });
         return result;
     },

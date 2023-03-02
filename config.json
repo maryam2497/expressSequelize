@@ -8,6 +8,8 @@
             "host":"localhost",
             "dialect":"postgres"
 
-        }
-    
+        },
+    "jwt":{
+        "secret":"ed2fb63f25cb83f06b0cc760a0580903f415baa56db3f2658899812c1908fc0ac623a5ec012480b4dcea29ac5446198a6dd93ee871e7f7275aedeb10a07fabbe"
+    }
 }
