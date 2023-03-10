@@ -9,28 +9,38 @@ Product.init(
             allowNull:false,
             type:DataTypes.INTEGER,
         },
-
-        discription:{
+title:{
             allowNull:false,
             type:DataTypes.STRING(),
         },
-
-        productPrice:{
+         price:{
             allowNull:false,
             type:DataTypes.DOUBLE,
         },
-
+        description:{
+            allowNull:false,
+            type:DataTypes.STRING(),
+        },
         category:{
             allowNull:false,
             type:DataTypes.STRING(),
         },
-        brand:{
+         image:{
             allowNull:false,
             type:DataTypes.STRING(),
         },
-        url:{
-            type:DataTypes.STRING(),
-        }
+        rating:{
+            type:DataTypes.JSON,
+            rate:{
+                allowNull:false,
+            type:DataTypes.FLOAT,
+            },
+             count:{
+                allowNull:false,
+            type:DataTypes.INTEGER,
+            }
+        },
+       
     },
     {
         timestamps:true,
