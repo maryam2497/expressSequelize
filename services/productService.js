@@ -22,4 +22,14 @@ removeProducts: async function(ids){
     const result = await productModel.removeProducts(ids);
     return result;
 },
+getBulkProducts: async function(){
+
+    const result = await productModel.getBulkProducts();
+    return result;
+},
+getProductByCategory: async function(category){
+    const result = await productModel.getProductByCategory(category);
+    return result;
+},
+
 }

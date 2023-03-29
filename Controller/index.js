@@ -15,6 +15,10 @@ module.exports = {
   getProductById: require("./Product/getProductById"),
   removeProducts: require("./Product/removeProducts"),
 
+  getBulkProducts: require("./Product/getBulkProducts"),
+  getProductByCategory: require("./Product/getProductByCategory"),
+
+
   //login
   login:require("./common/login"),
   logOut:require("./common/logOut"),
